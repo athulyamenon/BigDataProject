@@ -1,0 +1,23 @@
+<div class="product">
+    <div class="row">
+        {{# each diets}}
+                {{# each this}}
+                    <div class="col-sm-6 col-md-4" style="padding: 25px">
+                        <div class="img-thumbnail">
+                            <img src="{{this.imagepath}}" alt="..." class="img-responsive">
+                            <h3>{{this.title}}</h3>
+                            <p class="Description">{{this.description}}</p>
+                            <div class="clearfix">
+                                <div class="price pull-left">Price:${{this.Price}}</div>
+                                <a href="#" class="btn btn-primary pull-right" role="button"><i class="fas fa-shopping-cart"></i>Add to cart</a>
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<a href="#" class="btn btn-primary pull-right" role="button">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                {{/each}}
+        {{/each}}
+    </div>
+</div>
+
+
+

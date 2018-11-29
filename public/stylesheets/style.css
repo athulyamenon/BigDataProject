@@ -1,0 +1,32 @@
+body {
+    background-color: moccasin;
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.img-thumbnail img{
+  max-height: 200px;
+}
+.img-thumbnail .price{
+  font-weight: bold;
+  font-size:16px;
+}
+.img-thumbnail .Description{
+  color: black ;
+}
+.product{
+  background-color: seashell;
+  padding:50px;
+}
+.price{
+  padding-bottom: 10px;
+  font-weight: bolder;
+  font-variant-caps: normal;
+}
+.Description{
+  font-weight: bolder;
+
+}

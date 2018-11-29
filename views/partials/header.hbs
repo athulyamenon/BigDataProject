@@ -1,0 +1,61 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><i class="fa fa-paw" aria-hidden="true"></i>Rock 'N Dogs</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+           &nbsp; &nbsp; &nbsp; &nbsp;
+            <div class="dropdown">
+                <button class="btn btn-primary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    CATEGORIES
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="/shop/supply">Supplies</a>
+                    <a  class="dropdown-item" href="/">Dog Food Brands</a>
+                </div>
+            </div>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="/shop/search-result" method="get">
+            <input class="form-control mr-sm-2" name ="q" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i>Search</button>
+        </form>
+        <div>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-user"></i>User Account
+            </a>
+            <div class="dropdown-menu">
+                <form class="px-4 py-3">
+                    <div class="form-group">
+                        <label for="exampleDropdownFormEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleDropdownFormPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                        <label class="form-check-label" for="dropdownCheck">
+                            Remember me
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </form>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">New around here? Sign up</a>
+                <a class="dropdown-item" href="#">Forgot password?</a>
+            </div>
+        </div>
+    </div>
+</nav>
+{{!--
+<script src="/routes/index.js"></script>--}}
+<script src="/routes/index.js" type="text/javascript" charset="utf-8"></script>

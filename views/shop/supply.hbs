@@ -1,0 +1,27 @@
+<div class="product">
+    <h1>DOG SUPPLIES</h1>
+    <div class="row">
+        {{# each supplies}}
+            {{# each this}}
+                <div class="col-sm-6 col-md-4" style="padding: 25px">
+                    <div class="img-thumbnail">
+                        <img src="{{this.imagepath}}" alt="..." class="img-responsive">
+                        <h3>{{this.Title}}</h3>
+                        <p class="Price">Price:${{this.Price}}</p>
+                        <div class="clearfix">
+                            <a href="#" class="btn btn-primary pull-right" role="button"><i class="fas fa-shopping-cart"></i>Add to cart</a>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<a href="#" class="btn btn-primary pull-right" role="button">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+        {{/each}}
+    </div>
+</div>
+
+
+
+
+
+
+

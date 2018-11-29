@@ -1,0 +1,61 @@
+{{!--<% layout('layout') -%>--}}
+{{!--<div class="container">--}}
+{{!--{{#if data}}--}}
+   {{!-- <h3>Search for "<%= query %>" not found</h3>--}}
+    {{!--<% } else { %>--}}
+    {{!--<h3>Results for "<%= query %>"</h3>--}}
+    {{!--<div class="row">--}}
+        {{!--{{# each data}}--}}
+           {{!-- {{# each this}}--}}
+                 {{!--<div class="col-md-4">--}}
+                  {{!--<a href="/dogfood/<%= data[i]._source._id %>">--}}
+                    {{!--<div class="thumbnail">--}}
+                        {{!--<img src="{{this._source._imagepath}}"></img>--}}
+                        {{!--<div class="caption">--}}
+                            {{!--<h3><span style="font-weight: bold">{{title}}</span></h3>--}}
+                            {{!--<h3><span style="font-weight: bold">{{description}}</span></h3>--}}
+                            {{!--<img src="{{imagepath}}" class="img-thumbnail">--}}
+                            {{!--<h3><span style="font-weight: bold">{{Price}}</span></h3>--}}
+                            {{!--<h3>{{this.description}}></h3>--}}
+                            {{!--<h3>{{this.Price}}</h3>--}}
+                        {{!--</div>--}}
+                    {{!--</div>--}}
+            {{!--</a>--}}
+                 {{!--</div>--}}
+        {{!--<% } %>--}}
+           {{!-- {{/each}}--}}
+        {{!--{{/each}}--}}
+    {{!--</div>--}}
+{{!--{{else}}--}}
+    {{!--<h3>Search for not found</h3>--}}
+{{!--{{/if}}--}}
+{{!--</div>--}}
+{{!--<% } %>--}}
+
+
+
+<div class="product">
+    <div class="row">
+    {{#if data}}
+        {{# each data}}
+                <div class="col-sm-6 col-md-4" style="padding: 25px">
+                    <div class="img-thumbnail">
+                        <img src="{{imagepath}}" alt="..." class="img-responsive">
+                        <h3>{{title}}</h3>
+                        <p class="Description">{{description}}</p>
+                        <div class="clearfix">
+                            <div class="price pull-left">Price:${{Price}}</div>
+                            <a href="#" class="btn btn-primary pull-right" role="button"><i class="fas fa-shopping-cart"></i>Add to cart</a>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<a href="#" class="btn btn-primary pull-right" role="button">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+    {{else}}
+        <h3>Search for not found</h3>
+    {{/if}}
+    </div>
+</div>
+
+
+
